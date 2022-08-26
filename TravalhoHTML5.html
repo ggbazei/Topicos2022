@@ -3,70 +3,103 @@
       <tittle>Trabalho HTML 5</tittle>
    </head>
    <body>
-      <table border="1">
-         <td>
+        <form action="/pagina-processa-dados-do-form" method="post">
             Efetuar registro
-            <br> <span>Nome:</span>
-            <br> <input type="text">
-            <br> Data nascimento:
-            <br> <input type="date">
-            <br> Email:
-            <br> <input type="email">
-            <br> Senha:
-            <br> <input type="password">
-            <br> Sexo:
             <br>
-            <select>
-               <option>Outros</option>
-               <option >Feminino</option>
-               <option selected>Masculino</option>
-            </select>
-            <br> Telefone Residencial:
-            <br> <input type="tel"> 
-            <br> Celular:
-            <br> <input type="tel">
-            <br> Fumante:
-            <br>
-            <select>
-               <option >Não</option>
-               <option selected>Sim</option>
-            </select>
-            <br> Municipio de origen:
-            <br> <input type="text">
-            <br> <input type="submit" value="Cancelar">
-            <input type="submit" value="Cadastrar">
-         </td>
-         <td>
+            <div>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" />
+            </div>
+            <div>
+                <label for="dataNascimento">Data nascimento:</label><br>
+                <input type="date" id="dataNascimento" />
+            </div>
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" />
+            </div>
+            <div>
+                <label for="senha">Senha:</label><br>
+                <input type="password" id="senha" />
+            </div>
+            <div>
+                <label for="sexo">Sexo:</label><br>
+                <select id='sexo' name='sexo'>
+                    <option>Outros</option>
+                    <option >Feminino</option>
+                    <option selected>Masculino</option>
+                 </select>
+            </div>
+            <div>
+                <label for="telefoneResidencial">Telefone Residencial:</label><br>
+                <input type="tel" id="telefoneResidencial" />
+            </div>
+            <div>
+                <label for="celular">Celular:</label><br>
+                <input type="tel" id="celular" />
+            </div>
+            <div>
+                <label for="fumante">Fumante:</label><br>
+                <select id='sexo' name='fumante'>
+                    <option >Não</option>
+                    <option selected>Sim</option>
+                 </select>
+            </div>
+            <div>
+                <label for="municipioOrigem">Municipio de origen:</label><br>
+                <input type="text" id="municipioOrigem" />
+            </div>
+            <div>
+                <br> <input type="submit" value="Cancelar" id=''>
+                <input type="submit" value="Cadastrar">
+            </div>
             Dados
-            <br> Nome:
-            <br> <input type="text" disabled>
-            <br> Email:
-            <br> <input type="email" disabled>
-            <br> Senha:
-            <br> <input type="password" disabled>
-            <br> Data nascimento:
-            <br> <input type="date" disabled>
-            <br> Sexo:
-            <br>
-            <select disabled>
-               <option>Outros</option>
-               <option >Feminino</option>
-               <option selected>Masculino</option>
-            </select>
-            <br> Telefone Residencial:
-            <br> <input type="tel" disabled> 
-            <br> Celular:
-            <br> <input type="tel" disabled >
-            <br> Fumante:
-            <br>
-            <select disabled>
-               <option >Não</option>
-               <option selected>Sim</option>
-            </select>
-            <br> Municipio de origen:
-            <br> <input type="text" disabled>
-            <br> <input type="submit" value="Limpar">
-         </td>
-      </table>
+            <div>
+                <label for="nomeDados">Nome:</label><br>
+                <input type="text" id="nomeDados" disabled/>
+            </div>
+            <div>
+                <label for="emailDados">Email:</label><br>
+                <input type="email" id="emailDados" disabled/>
+            </div>
+            <div>
+                <label for="senhaDados">Senha:</label><br>
+                <input type="password" id="senhaDados" disabled/>
+            </div>
+            <div>
+                <label for="dataNascimentoDados">Data nascimento:</label><br>
+                <input type="date" id="dataNascimentoDados" disabled/>
+            </div>
+            <div>
+                <label for="sexoDados">Sexo:</label><br>
+                <select id='sexoDados' name='sexoDados' disabled>
+                    <option>Outros</option>
+                    <option >Feminino</option>
+                    <option selected>Masculino</option>
+                 </select>
+            </div>
+            <div>
+                <label for="telefoneResidencialDados">Telefone Residencial:</label><br>
+                <input type="tel" id="telefoneResidencialDados" disabled/>
+            </div>
+            <div>
+                <label for="celularDados">Celular:</label><br>
+                <input type="tel" id="celularDados" disabled/>
+            </div>
+            <div>
+                <label for="fumanteDados">Fumante:</label><br>
+                <select id='sexo' name='fumanteDados' disabled>
+                    <option >Não</option>
+                    <option selected>Sim</option>
+                 </select>
+            </div>
+            <div>
+                <label for="municipioOrigemDados">Municipio de origen:</label><br>
+                <input type="text" id="municipioOrigemDados" />
+            </div>
+            <div>
+                <br> <input type="submit" value="Limpar">
+            </div>
+        </form>
    </body>
 </html>
